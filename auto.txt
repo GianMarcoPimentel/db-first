@@ -1,9 +1,10 @@
 Tabella : auto 
 
 ID_Auto: TINYINT, PK
-ID_concessionario: TINYINT, UNIQUE
+ID_concessionario: TINYINT, NOT NULL
 marca: VARCHAR(20), NOT NULL
 modello: VARCHAR(20), NOT NULL
+targa: VARCHAR(10),UNIQUE
 anno_immatricolazione: YEAR, NOT NULL
 paese_immatricolazione: VARCHAR(60), NOT NULL
 carrozzeria: VARCHAR(20), NOT NULL
@@ -11,7 +12,7 @@ colore:  VARCHAR(20), NOT NULL
 alimentazione:  VARCHAR(10), NOT NULL
 cilindarata: SMALL, NOT NULL
 km_percorsi: INT, NOT NULL
-immagine: , NULL
+immagine: BOOL, NULL
 accessori: TEXT, NOT NULL
 descrizione: TEXT, NULL
 note_aggiuntive: VARCHAR(255), NULL
