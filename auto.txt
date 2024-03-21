@@ -1,4 +1,22 @@
 Tabella : auto 
 
+ID_Auto: 
+ID_concessionario:
+marca: 
+modello: 
+anno_immatricolazione:
+carrozzeria: 
+colore:
+alimentazione: 
+cilindarata: 
+km_percorsi: 
+immagine:
+accessori:
+descrizione:
+note_aggiuntive:
+anno_inserimento_vendita:
+prezzo:
+disponibile:
+
 
 
