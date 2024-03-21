@@ -1,22 +1,23 @@
 Tabella : auto 
 
-ID_Auto: 
-ID_concessionario:
-marca: 
-modello: 
-anno_immatricolazione:
-carrozzeria: 
-colore:
-alimentazione: 
-cilindarata: 
-km_percorsi: 
-immagine:
-accessori:
-descrizione:
-note_aggiuntive:
-anno_inserimento_vendita:
-prezzo:
-disponibile:
+ID_Auto: TINYINT, PK
+ID_concessionario: TINYINT, UNIQUE
+marca: VARCHAR(20), NOT NULL
+modello: VARCHAR(20), NOT NULL
+anno_immatricolazione: YEAR, NOT NULL
+paese_immatricolazione: VARCHAR(60), NOT NULL
+carrozzeria: VARCHAR(20), NOT NULL
+colore:  VARCHAR(20), NOT NULL
+alimentazione:  VARCHAR(10), NOT NULL
+cilindarata: SMALL, NOT NULL
+km_percorsi: INT, NOT NULL
+immagine: , NULL
+accessori: TEXT, NOT NULL
+descrizione: TEXT, NULL
+note_aggiuntive: VARCHAR(255), NULL
+data_inserimento_vendita: DATE, NULL
+prezzo:FLOAT(10,2), NOT NULL
+disponibile: TINYINT, NOT NULL
 
 
 
