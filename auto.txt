@@ -1,24 +1,36 @@
 Tabella : auto 
 
-ID_Auto: TINYINT, PK
+ID_Auto: TINYINT, Primary Key, AUTO INCREMENT (UNIQUE, NOT NULL , ma PK li comprende di solito)
 ID_concessionario: TINYINT, NOT NULL
-marca: VARCHAR(20), NOT NULL
-modello: VARCHAR(20), NOT NULL
-targa: VARCHAR(10),UNIQUE
+marca: VARCHAR(30), NOT NULL
+modello: VARCHAR(50), NOT NULL
+targa: VARCHAR(), NULL, UNIQUE
 anno_immatricolazione: YEAR, NOT NULL
 paese_immatricolazione: VARCHAR(60), NOT NULL
-carrozzeria: VARCHAR(20), NOT NULL
-colore:  VARCHAR(20), NOT NULL
+carrozzeria: VARCHAR(30), NOT NULL
+colore:  VARCHAR(30), NOT NULL
 alimentazione:  VARCHAR(10), NOT NULL
+tipo_motore: VARCHAR(20), NOT NULL
 cilindarata: SMALL, NOT NULL
 km_percorsi: INT, NOT NULL
-immagine: BOOL, NULL
+immagine: VARCHAR(255), NULL
 accessori: TEXT, NOT NULL
-descrizione: TEXT, NULL
+condizione/descrizione: TEXT, NULL
 note_aggiuntive: VARCHAR(255), NULL
 data_inserimento_vendita: DATE, NULL
-prezzo:FLOAT(10,2), NOT NULL
+prezzo:DECIMAL(8,2), NOT NULL
 disponibile: TINYINT, NOT NULL
+
+vin: VARCHAR(17), NULL
+classe_emissioni: VARCHAR(10), NULL
+n_proprietari: TINYINT, NOT NULL
+potenza : SMALLINT, NOT NULL
+
+
+// IL Booleano si può scrivere anche BOOL, INT(1), TINYINT
+
+
+
 
 
 
