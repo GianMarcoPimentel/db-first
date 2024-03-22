@@ -1,6 +1,6 @@
 Tabella : auto 
 
-ID_Auto: TINYINT, Primary Key, AUTO INCREMENT (UNIQUE, NOT NULL , ma PK li comprende di solito)
+ID_Auto: SMALLINT, Primary Key, AUTO INCREMENT (UNIQUE, NOT NULL , ma PK li comprende di solito)
 ID_concessionario: TINYINT, NOT NULL
 marca: VARCHAR(30), NOT NULL
 modello: VARCHAR(50), NOT NULL
